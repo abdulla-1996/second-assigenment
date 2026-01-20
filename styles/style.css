@@ -208,6 +208,74 @@ hr {
     color: #FFFFFF;
   
 }
+              /* tech wave information style*/
+.information {
+    background-color: #1A0B2E;
+    max-width: 100%;
+    
+}
+.information>h3 {
+    text-align: center;
+    padding-top: 120px;
+}
+.box-container {
+      width: 1110px;
+      padding-bottom: 120px;
+    margin: 0 auto;
+    margin-top: 40px;
+  
+    
+}
+.information-info {
+   
+    background-color: #230E3D;
+   padding: 40px;
+   align-items: center;
+   border-radius: 40px;
+   
+}
+.information-info .heading {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #FFFFFF;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    
+}
+.information-info .details {
+    color: #FFFFFF;
+     line-height: 24px;
+     font-size: 12px;
+}
+.audio {
+    align-content: center;
+}
+.audio {
+    grid-area: audio;
+}
+.mobile {
+     grid-area: mobile;
+}
+.global {
+    grid-area: global;
+}
+.interviews {
+    grid-area: interviews;
+}
+.resourses {
+    grid-area: resourses;
+}
+.box-container {
+    display: grid;
+    gap: 40px;
+    grid-template-areas: 
+    "audio mobile mobile"
+    "audio global global"
+    "interviews interviews resourses";
+
+}
+
+
 
 
 
@@ -256,9 +324,20 @@ hr {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 5px;
-   
-   
+ 
+}
+.box-container {
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+   grid-template-areas: 
+   "audio"
+   "mobile"
+   "global"
+    "interviews"
+    "resourses";
 }
     
 } 
+
 
