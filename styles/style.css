@@ -17,6 +17,20 @@
     font-weight: 700;
     color: #FFFFFF;
 }
+.heading {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #FFFFFF;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    
+}
+.details {
+    color: #FFFFFF;
+    opacity: 60%;
+     line-height: 24px;
+     font-size: 12px;
+}
             /* navigation bar style */
 header {
     background-color: #1A0B2E;
@@ -142,6 +156,7 @@ header {
     font-size: 11px;
     margin-bottom: 15px;
 
+
 }
 .buttons {
     display: flex;
@@ -234,19 +249,7 @@ hr {
    border-radius: 40px;
    
 }
-.information-info .heading {
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: #FFFFFF;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    
-}
-.information-info .details {
-    color: #FFFFFF;
-     line-height: 24px;
-     font-size: 12px;
-}
+
 .audio {
     align-content: center;
 }
@@ -273,8 +276,109 @@ hr {
     "audio global global"
     "interviews interviews resourses";
 
+} 
+
+          /* Episodes and host-section style */
+.episode-host {
+    width: 100%;
+    
+    background-color: #1A0B2E;
 }
 
+.featured-section {
+    width: 1110px;
+    margin: 0 auto;;
+}
+.featured-section h3 {
+    text-align: center;
+    margin-bottom: 40px;}
+
+.card-featured-section{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    
+}
+.featured-section-detail{
+    width: 340px;
+    height: 440px;
+    gap: 40px;
+    background-color: #250D44;
+    border-radius: 15px;
+    
+} 
+.featured-section-detail p {
+    padding-left:20px;
+}
+.video {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    
+}
+.timer {
+    color: #00FF88;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    padding-left: 20px;
+
+}
+
+.img-size {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 100px; 
+    
+}
+.video-container {
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+}
+.thumbnail {
+    width: 100%;
+    display: block;
+}
+.host-info {
+    width: 100%;
+    height: 100vh;
+    background-color: #1A0B2E;
+    padding-top: 120px;
+    
+}
+
+.host-info h3 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+.host-container {
+  display: flex;
+  gap: 15px;
+  background-color: #250D44;
+  border-radius: 20px;
+  padding: 40px;
+   width: 1110px;  
+    margin: 0 auto;;
+  
+}
+
+.brand-logos {
+    display: flex;
+    gap: 10px;
+    padding-top: 10px;
+}
+.size {
+    width: 40px;
+    height: 40px;
+    box-sizing: border-box;
+border: 1px solid rgba(83, 60, 114, 1);
+border-radius: 50%;
+padding-left: 10px; 
+padding-top: 10px;
+   
+} 
 
 
 
@@ -309,11 +413,16 @@ hr {
     margin-right: 20px;
  }
  section{
-    background-position: 50%;
+    background-position: 100%;
  }
  .max-container {
     width: 100%;
  }
+ .title {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #FFFFFF;
+}
  .about-podcast {
    
     align-content: center;
@@ -337,7 +446,45 @@ hr {
     "interviews"
     "resourses";
 }
+.featured-section {
+    max-width: 100%;
+}
+.featured-section .title{
+    width: 100%;
+}
+.card-featured-section{
+   
+  grid-template-columns: repeat(1, 1fr);
+  gap: 20px;
+  padding-left: 90px;
+  width: 100%;
+   
+}
+.host-info {
+  width: 100%;
+}
+.host-container{
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+}
+.featured-section h3 {
+    text-align: left;
+    padding-left: 56px;
+}
+.host-info h3{
+    text-align: left;
+   padding-left: 125px;
+}
+
     
-} 
+}
+
+
+    
+
+    
+
 
 
