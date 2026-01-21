@@ -12,6 +12,9 @@
     "wdth" 100;
 }
               /* shared style */
+body {
+    background-color: #1A0B2E;
+}             
 .title {
     font-size: 3rem;
     font-weight: 700;
@@ -21,6 +24,7 @@
     font-size: 1.5rem;
     font-weight: 700;
     color: #FFFFFF;
+    opacity: 60%;
     margin-top: 1rem;
     margin-bottom: 1rem;
     
@@ -343,9 +347,10 @@ hr {
 }
 .host-info {
     width: 100%;
-    height: 100vh;
+    
     background-color: #1A0B2E;
-    padding-top: 120px;
+    padding-top: 50px;
+    
     
 }
 
@@ -358,9 +363,9 @@ hr {
   gap: 15px;
   background-color: #250D44;
   border-radius: 20px;
-  padding: 40px;
+  padding: 20px;
    width: 1110px;  
-    margin: 0 auto;;
+   margin: 0 auto;;
   
 }
 
@@ -379,15 +384,43 @@ padding-left: 10px;
 padding-top: 10px;
    
 } 
-
-
-
-
-
-
-
-
-
+                /* footer section style */
+#footer-section {
+    width: 100%;
+    min-height: 250px;
+    margin-top: 70px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../assets/footer-bg.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;  
+}
+.logo-image {
+    width: 250px;
+    margin: 0 auto;
+}
+.footer-container {  
+   
+    
+}
+.footer-logos {
+   display: flex;
+   align-items: center;
+   flex-wrap: wrap;
+   justify-content: center;
+   gap: 20px; 
+   padding-top: 20px;
+  
+}
+.footer-logos span {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px;
+}
 
 
 
@@ -466,7 +499,8 @@ padding-top: 10px;
 .host-container{
     flex-direction: column;
     flex-wrap: wrap;
-    width: 100%;
+    width: 90%;
+    height: 550px;
     align-items: center;
 }
 .featured-section h3 {
@@ -476,6 +510,22 @@ padding-top: 10px;
 .host-info h3{
     text-align: left;
    padding-left: 125px;
+}
+#footer-section {
+    background-size: cover;
+    
+}
+.footer-logos {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   padding-top: 20px;
+   padding-bottom: 20px;
+  
+   /* align-items: center;
+   flex-wrap: wrap;
+   justify-content: center;
+   gap: 20px;  */
+  
 }
 
     
