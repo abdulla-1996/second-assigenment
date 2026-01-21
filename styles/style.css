@@ -20,6 +20,9 @@ body {
     font-weight: 700;
     color: #FFFFFF;
 }
+.title:hover {
+    color: aquamarine;
+}
 .heading {
     font-size: 1.5rem;
     font-weight: 700;
@@ -56,16 +59,19 @@ header {
     height: 30px;
    
 }
+
 .info ul {
     display: flex;
-    gap: 2rem;
-   
+    gap: 2rem;  
 }
 .info li {
     list-style: none;
 }
 .info li a {
     text-decoration: none;
+}
+.info li a:hover {
+    color: aquamarine;
 }
 
 .info {
@@ -91,6 +97,10 @@ header {
     font-size: 2rem;
     display: none;
  }
+ #navigation-bar>span:hover {
+    cursor: pointer;
+ }
+
                 /* background speaker style */
 
  #music-container{
@@ -131,6 +141,7 @@ header {
     50% {transform: translateY(-10px);}
     100% {transform: translateY(0);}
 }
+
 .badge {
     position: absolute;
     top: 2px;
@@ -156,9 +167,13 @@ header {
     font-weight: 800;
     margin-bottom: 8px;
 }
+.music-content h3:hover {
+    color: aquamarine;
+}
 .music-content p {
     font-size: 11px;
     margin-bottom: 15px;
+     opacity: 60%;
 
 
 }
@@ -178,6 +193,7 @@ header {
 }
 .btn:hover {
     cursor: pointer;
+    color: aquamarine;
 }
 .spotify {
     background: var(--Linear, linear-gradient(47.64deg, rgba(247, 233, 63, 1),rgba(251, 9, 180, 1),rgba(145, 0, 248, 1)));
@@ -251,7 +267,11 @@ hr {
    padding: 40px;
    align-items: center;
    border-radius: 40px;
-   
+   transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.information-info:hover {
+ transform: translateY(-12px);
+ box-shadow: 0 15px 35px rgba(0, 0, 0,0.15);
 }
 
 .audio {
@@ -308,8 +328,12 @@ hr {
     gap: 40px;
     background-color: #250D44;
     border-radius: 15px;
-    
+    transition: transform 0.3s ease, box-shadow 0.3s ease;   
 } 
+.featured-section-detail:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0,0.15);  
+}
 .featured-section-detail p {
     padding-left:20px;
 }
@@ -327,7 +351,7 @@ hr {
 
 }
 
-.img-size {
+ .img-size { 
     position: absolute;
     top: 50%;
     left: 50%;
@@ -344,7 +368,10 @@ hr {
 .thumbnail {
     width: 100%;
     display: block;
-}
+} 
+
+
+
 .host-info {
     width: 100%;
     
@@ -366,7 +393,11 @@ hr {
   padding: 20px;
    width: 1110px;  
    margin: 0 auto;;
-  
+   transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.host-container:hover {
+    transform: translateY(-12px);
+ box-shadow: 0 15px 35px rgba(0, 0, 0,0.15);
 }
 
 .brand-logos {
